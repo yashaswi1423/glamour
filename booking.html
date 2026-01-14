@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Glamour Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">Book Appointment</h1>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Anantapur</p>
+            </div>
+        </header>
+
+        <section class="booking-page">
+            <div class="booking-hero">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" alt="Salon">
+                <div class="booking-info">
+                    <h3>Schedule Your Visit</h3>
+                    <p>We're open Mon-Sun, 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> Phone Number</label>
+                    <input type="tel" placeholder="+91 98765 43210" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email (Optional)</label>
+                    <input type="email" placeholder="your@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-cut"></i> Select Service</label>
+                    <select required>
+                        <option value="">Choose a service</option>
+                        <option value="haircut">Haircut & Styling</option>
+                        <option value="coloring">Hair Coloring</option>
+                        <option value="treatment">Hair Treatment</option>
+                        <option value="facial">Facial</option>
+                        <option value="gold-facial">Gold Facial</option>
+                        <option value="cleanup">Cleanup & Detan</option>
+                        <option value="bridal">Bridal Makeup</option>
+                        <option value="party">Party Makeup</option>
+                        <option value="massage">Body Massage</option>
+                        <option value="manicure">Manicure & Pedicure</option>
+                        <option value="waxing">Waxing Services</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-calendar"></i> Preferred Date</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-clock"></i> Preferred Time</label>
+                    <select required>
+                        <option value="">Select time slot</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">01:00 PM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="16:00">04:00 PM</option>
+                        <option value="17:00">05:00 PM</option>
+                        <option value="18:00">06:00 PM</option>
+                        <option value="19:00">07:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-comment"></i> Special Requests (Optional)</label>
+                    <textarea placeholder="Any specific requirements..." rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-check-circle"></i> Confirm Booking
+                </button>
+            </form>
+
+            <div class="contact-options">
+                <h3>Or Contact Us Directly</h3>
+                <div class="contact-buttons">
+                    <a href="tel:+919876543210" class="contact-btn call">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="https://wa.me/919876543210" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="services.html" class="nav-item">
+                <i class="fas fa-cut"></i>
+                <span>Services</span>
+            </a>
+            <a href="booking.html" class="nav-item active">
+                <i class="fas fa-calendar"></i>
+                <span>Book</span>
+            </a>
+            <a href="gallery.html" class="nav-item">
+                <i class="fas fa-images"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
